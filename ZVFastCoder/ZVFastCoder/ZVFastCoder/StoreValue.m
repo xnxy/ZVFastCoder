@@ -24,7 +24,7 @@
 
 #pragma mark -
 #pragma mark --- 存 ----
-- (void)zvstoreValue:(id)value key:(NSString *)key{
+- (void)zvStoreValue:(id)value key:(NSString *)key{
 	NSData *data = [FastCoder dataWithRootObject:value];
 	
 	if (!data) {
@@ -40,7 +40,7 @@
 
 #pragma mark -
 #pragma mark --- 取 -----
-- (id)zvvalueWithKey:(NSString *)key{
+- (id)zvValueWithKey:(NSString *)key{
 	NSString *fullPath = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:key];
 	NSData *data = [NSData dataWithContentsOfFile:fullPath];
 	return [FastCoder objectWithData:data];
@@ -48,7 +48,7 @@
 
 #pragma mark -
 #pragma mark --- 移除 -----
-- (void)zvremoveWithKey:(NSString *)key{
+- (void)zvRemoveWithKey:(NSString *)key{
 	NSString *fullPath = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:key];
 	NSFileManager *fileManager = [NSFileManager defaultManager];
 	BOOL fileExists = [fileManager fileExistsAtPath:fullPath];
