@@ -15,7 +15,7 @@
 		A0EFFBB91E666CF7002D87D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0EFFBB71E666CF7002D87D3 /* LaunchScreen.storyboard */; };
 		A0EFFBC41E666CF7002D87D3 /* ZVFastCoderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EFFBC31E666CF7002D87D3 /* ZVFastCoderTests.m */; };
 		A0EFFBCF1E666CF7002D87D3 /* ZVFastCoderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EFFBCE1E666CF7002D87D3 /* ZVFastCoderUITests.m */; };
-		A0EFFBDF1E6675C3002D87D3 /* FastCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EFFBDE1E6675C3002D87D3 /* FastCoder.m */; };
+		A0EFFBDF1E6675C3002D87D3 /* FastCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EFFBDE1E6675C3002D87D3 /* FastCoder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A0EFFBE21E6675F2002D87D3 /* StoreValue.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EFFBE11E6675F2002D87D3 /* StoreValue.m */; };
 /* End PBXBuildFile section */
 
