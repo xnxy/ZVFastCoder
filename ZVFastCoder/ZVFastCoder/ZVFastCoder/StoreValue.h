@@ -11,11 +11,11 @@
 @interface StoreValue : NSObject
 
 + (StoreValue *)sharedInstance;
-
+//存
 - (void)storeValue:(id)value key:(NSString *)key;
-
+//取
 - (id)valueWithKey:(NSString *)key;
-
+//删
 - (void)removeWithKey:(NSString *)key;
 
 @end
