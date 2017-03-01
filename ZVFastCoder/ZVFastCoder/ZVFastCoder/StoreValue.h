@@ -12,10 +12,10 @@
 
 + (StoreValue *)sharedInstance;
 //存
-- (void)storeValue:(id)value key:(NSString *)key;
+- (void)zvstoreValue:(id)value key:(NSString *)key;
 //取
-- (id)valueWithKey:(NSString *)key;
+- (id)zvvalueWithKey:(NSString *)key;
 //删
-- (void)removeWithKey:(NSString *)key;
+- (void)zvremoveWithKey:(NSString *)key;
 
 @end

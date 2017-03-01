@@ -42,7 +42,7 @@
 - (IBAction)saveBtn:(id)sender {
 	
 	StoreValue *storeValue = [StoreValue sharedInstance];
-	[storeValue storeValue:self.dataAry key:@"hello"];
+	[storeValue zvstoreValue:self.dataAry key:@"hello"];
 	
 	NSLog(@"-----%@------",NSHomeDirectory());
 	
@@ -54,7 +54,7 @@
 	
 	StoreValue *storeValue = [StoreValue sharedInstance];
 
-	NSLog(@"-----%@------取：%@----",NSHomeDirectory(),[storeValue valueWithKey:@"hello"]);
+	NSLog(@"-----%@------取：%@----",NSHomeDirectory(),[storeValue zvvalueWithKey:@"hello"]);
 	
 }
 
@@ -64,7 +64,7 @@
 	
 	StoreValue *storeValue = [StoreValue sharedInstance];
 	
-	[storeValue removeWithKey:@"hello"];
+	[storeValue zvremoveWithKey:@"hello"];
 	
 	NSLog(@"-----%@------",NSHomeDirectory());
 }
